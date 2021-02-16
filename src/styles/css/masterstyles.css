@@ -1,0 +1,84 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+article {
+  font-style: normal;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 20px;
+}
+
+body {
+  font-family: "Times New Roman", Helvetica, Arial;
+  font-size: 15px;
+  margin: auto;
+  padding: auto;
+}
+body .body-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.body-container header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.body-container header .jorlandoblog {
+  width: auto;
+}
+.body-container header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #000000;
+}
+.body-container header nav ul {
+  width: 100%;
+  margin: 0.2% auto;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.body-container header nav ul li {
+  margin: 15px;
+  padding: 5px;
+  border: 1px solid #ffffff;
+}
+.body-container header nav ul li a {
+  font-size: 20px;
+  color: #ffffff;
+}
+.body-container header nav ul li a:hover {
+  color: #6e6e6e;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.body-container header nav ul li:hover {
+  border: 1px solid rgba(110, 110, 110, 0.5);
+  transition: all 0.5s ease;
+}
+
+/*# sourceMappingURL=masterstyles.css.map */

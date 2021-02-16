@@ -81,4 +81,92 @@ body .body-container {
   transition: all 0.5s ease;
 }
 
+footer {
+  width: 100%;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+}
+footer .rights {
+  color: #ffffff;
+  font-style: italic;
+  width: 100%;
+  order: 2;
+  flex-grow: 1;
+}
+footer .rights p {
+  margin: 0 40%;
+}
+footer .networks {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  order: 1;
+}
+footer .networks .icon-net {
+  font-size: 40px;
+  width: 20%;
+  margin: 0 auto;
+}
+footer .networks .icon-net a {
+  width: 100%;
+  margin: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+  body .body-container header {
+    width: 100%;
+  }
+  body .body-container header .jorlandoblog {
+    width: 60%;
+  }
+  body .body-container header .jorlandoblog img {
+    width: 80%;
+  }
+  body .body-container header nav {
+    width: 100%;
+  }
+  body .body-container header nav ul {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  body .body-container header nav ul li {
+    width: auto;
+    margin: 10px;
+  }
+  body .body-container header nav ul li a {
+    font-size: 10px;
+  }
+  body .body-container footer {
+    width: 100%;
+  }
+  body .body-container footer .rights {
+    width: 100%;
+  }
+  body .body-container footer .rights p {
+    font-size: 8px;
+    margin: 0 10%;
+  }
+  body .body-container footer .networks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  body .body-container footer .networks .icon-net {
+    width: 15%;
+    font-size: 20px;
+  }
+  body .body-container footer .networks .icon-net a {
+    margin: 10px;
+  }
+}
+
 /*# sourceMappingURL=masterstyles.css.map */

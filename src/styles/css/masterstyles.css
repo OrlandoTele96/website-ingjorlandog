@@ -82,9 +82,67 @@ body .body-container {
 }
 
 .Posts {
-  width: 100%;
-  margin: 10px;
+  width: 80%;
+  margin: auto;
   padding: 5px;
+}
+.Posts .post {
+  width: 100%;
+  margin: 0.5% 0%;
+  margin-bottom: 2%;
+  padding: 2%;
+  background: #E5E3E3;
+}
+.Posts .post .post-container {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.Posts .post .post-container h2 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bolder;
+}
+.Posts .post .post-container h3 {
+  font-style: italic;
+  text-align: center;
+}
+.Posts .post .post-container .img-article {
+  width: auto;
+  margin: 2% auto;
+  padding: 1%;
+}
+.Posts .post .post-container .proyect {
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #000000;
+  display: flex;
+  align-items: flex-start;
+}
+.Posts .post .post-container .proyect:hover {
+  border-color: #6e6e6e;
+  transition: all 0.3s ease;
+}
+.Posts .post .post-container .proyect .proyect-img {
+  width: 20%;
+  margin: 1px;
+  padding: 1px;
+}
+.Posts .post .post-container .proyect .proyect-img a {
+  width: 100%;
+  opacity: 1;
+}
+.Posts .post .post-container .proyect .proyect-img a img {
+  width: 100%;
+}
+.Posts .post .post-container .proyect .proyect-img:hover {
+  opacity: 0.5;
 }
 
 footer {

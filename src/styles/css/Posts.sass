@@ -29,6 +29,31 @@ $PostColor : #E5E3E3
       h3
         font-style: italic
         text-align: center
+      .proyect-gallery
+        display: flex
+        flex-direction: row
+        justify-content: center
+        .proyect-rv-container
+          width: 20%
+          margin: 1%
+          padding: 1%
+          border: 3px solid $FirstColor
+          display: flex
+          flex-direction: column
+          align-items: center
+          .proyect-rv-img
+            a
+              margin: auto
+              img
+                width: 200px
+                height: 150px
+                margin: 1%
+                padding: 1%
+                opacity: 1
+                &:hover
+                  opacity: 0.5
+          &:hover
+            border-color: rgba($FirstColor,0.5)
       .img-article
         width: auto
         margin: 2% auto

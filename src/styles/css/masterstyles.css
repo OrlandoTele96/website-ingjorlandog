@@ -112,6 +112,34 @@ body .body-container {
   font-style: italic;
   text-align: center;
 }
+.Posts .post .post-container .posted {
+  width: 95%;
+  margin: auto;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Posts .post .post-container .posted h3 {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+.Posts .post .post-container .posted h4 {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+.Posts .post .post-container .posted .posted-img {
+  width: auto;
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+.Posts .post .post-container .posted .posted-img img {
+  width: 400px;
+}
 .Posts .post .post-container .proyect-gallery {
   display: flex;
   flex-direction: row;
@@ -233,7 +261,7 @@ footer .networks .icon-net a {
   margin: 60px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1400px) {
   body {
     font-size: 10px;
   }
@@ -277,6 +305,24 @@ footer .networks .icon-net a {
     width: 100%;
     margin: 1%;
     padding: 1%;
+  }
+  body .body-container .Posts .post .post-container .proyect-gallery {
+    margin: 1px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .body-container .Posts .post .post-container .proyect-gallery .proyect-rv-container {
+    width: auto;
+    justify-content: center;
+  }
+  body .body-container .Posts .post .post-container .posted h3 {
+    font-size: 18px;
+  }
+  body .body-container .Posts .post .post-container .posted h4 {
+    font-size: 12px;
+  }
+  body .body-container .Posts .post .post-container .posted .posted-img img {
+    width: 200px;
   }
   body .body-container .Posts .post .post-container .img-article {
     width: auto;

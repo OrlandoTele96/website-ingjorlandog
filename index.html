@@ -12,74 +12,68 @@
     <title>Ing. Jorge Orlando's blog</title>
   </head>
   <body>
-    <div class="body-container">
-      <header>
-        <div class="jorlandoblog">
-          <img src="img/head-text.png" alt="">
+    <header>
+      <div class="jorlandbrand">
+        <img src="img/head-text.png" alt="">
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Proyects.html">Proyects</a></li>
+          <li><a href="Posts.html">Posts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <section class="container">
+        <h2>About me</h2>
+        <h3>Febrero 12, 2021</h3>
+        <div class="img-article">
+          <img src="img/me.jpg" alt="">
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Proyects.html">Proyects</a></li>
-            <li><a href="Posts.html">Posts</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="Posts">
-        <article class="post">
-          <div class="post-container">
-            <h2>About me</h2>
-            <h3>Febrero 12, 2021</h3>
-            <div class="img-article">
-              <img src="img/me.jpg" alt="">
-            </div>
-            <div class="text-article">
-              <p> Mi nombre es Jorge Orlando González Guzmán, tengo 24 años y vivo
-              actualmente en Ciudad de México. Soy estudiante de
-              ingeniería en telecomunicaciones en proceso de titulación por la
-              Universidad Nacional Autónoma de México. </p>
-              <p>Dicha formación me ha permitido desarrollar conocimientos en
-              las áreas de redes de comunicaciones, seguridad de redes,
-              desarrollo de aplicaciones, desarrollo de sitios web y
-              generalmente en tecnologías de la información (IT).
-              Tengo amplio interés en desarrollar y generar tecnología que
-              abarque las anteriores áreas mencionadas.</p>
-              <p>He tenido experiencia en el área de administración de redes donde
-              estuve involucrado en el proceso de configuración de servidores DNS.
-              Actualmente me estoy dedicando a la conclusión de mi proyecto de
-              tesis con el cual pretendo abordar un esquema de detección de
-              ataques en redes IoT (Internet of Things). </p>
-              <p><br>Contacto : orlandotele96@ingjorlandog.site</br></p>
-              <p><br>Contacto : jorge.o.gonzalez.dev@gmail.com</br></p>
-            </div>
-          </div>
+        <article class="aboutme-post">
+          <p> Mi nombre es Jorge Orlando González Guzmán, tengo 24 años y vivo
+          actualmente en Ciudad de México. Soy estudiante de
+          ingeniería en telecomunicaciones en proceso de titulación por la
+          Universidad Nacional Autónoma de México. </p>
+          <p>Dicha formación me ha permitido desarrollar conocimientos en
+          las áreas de redes de comunicaciones, seguridad de redes,
+          desarrollo de aplicaciones, desarrollo de sitios web y
+          generalmente en tecnologías de la información (IT).
+          Tengo amplio interés en desarrollar y generar tecnología que
+          abarque las anteriores áreas mencionadas.</p>
+          <p>He tenido experiencia en el área de administración de redes donde
+          estuve involucrado en el proceso de configuración de servidores DNS.
+          Actualmente me estoy dedicando a la conclusión de mi proyecto de
+          tesis con el cual pretendo abordar un esquema de detección de
+          ataques en redes IoT (Internet of Things). </p>
+          <p><br>Contacto : orlandotele96@ingjorlandog.site</br></p>
+          <p><br>Contacto : jorge.o.gonzalez.dev@gmail.com</br></p>
         </article>
-        <article class="post">
-          <div class="post-container">
-            <h2>Proyects</h2>
-            <div class="proyect-gallery">
-              <div class="proyect-rv-container">
-                  <div class="proyect-rv-img">
-                    <a href="Proyect_sybil.html">
-                      <img src="img/dispositivos.jpeg" alt="">
-                    </a>
-                  </div>
-                <h3>Sybil attack detection</h2>
+      </section>
+      <section class="container">
+        <h2>Proyects</h2>
+        <div class="proyect-gallery">
+          <div class="gallery-proyects">
+              <div class="proyect-gal-img">
+                <a href="Proyect_sybil.html">
+                  <img src="img/dispositivos.jpeg" alt="">
+                </a>
               </div>
-              <div class="proyect-rv-container">
-                  <div class="proyect-rv-img">
-                    <a href="Proyect_website.html">
-                      <img src="img/no-img.jpg" alt="">
-                    </a>
-                  </div>
-                <h3>Blog personal</h2>
-              </div>
-            </div>
+            <h3>Sybil attack detection</h2>
           </div>
-        </article>
-        <article class="post">
-          <div class="post-container">
-            <h2>Recent posts</h2>
+          <div class="gallery-proyects">
+              <div class="proyect-gal-img">
+                <a href="Proyect_website.html">
+                  <img src="img/no-img.jpg" alt="">
+                </a>
+              </div>
+            <h3>Blog personal</h2>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2>Recent posts</h2>
             <div class="post-recent">
               <div class="post-recent-content">
                 <h3>Mi primer sitio web</h3>
@@ -89,25 +83,32 @@
                  SASS y demás.
               </div>
             </div>
-          </div>
-        </article>
+            <div class="post-recent">
+              <div class="post-recent-content">
+                <h3>Mi primer sitio web</h3>
+                Este es el primer post que he creado para mi primer website.
+                Como he relatado en la sección de proyectos este solo tiene la
+                intención de poner en práctica mis conocimientos de HTML, CSS,
+                 SASS y demás.
+              </div>
+            </div>
       </section>
-      <footer>
-        <div class="rights">
-          <p>  Designed and developed by Jorge Orlando Gonzalez</p>
+    </section>
+    <footer>
+      <div class="rights">
+        <p>  Designed and developed by Jorge Orlando Gonzalez</p>
+      </div>
+      <div class="networks">
+        <div class="icon-net">
+          <a href="https://www.linkedin.com/in/jorge-orlando-gonz%C3%A1lez-guzm%C3%A1n-566180b5/"><i class="fa fa-linkedin"></i></a>
         </div>
-        <div class="networks">
-          <div class="icon-net">
-            <a href="https://www.linkedin.com/in/jorge-orlando-gonz%C3%A1lez-guzm%C3%A1n-566180b5/"><i class="fa fa-linkedin"></i></a>
-          </div>
-          <div class="icon-net">
-            <a href="https://twitter.com/JorgeOrlandoGo9"><i class="fa fa-twitter"></i></a>
-          </div>
-          <div class="icon-net">
-            <a href="https://github.com/OrlandoTele96"><i class="fa fa-github"></i></a>
-          </div>
+        <div class="icon-net">
+          <a href="https://twitter.com/JorgeOrlandoGo9"><i class="fa fa-twitter"></i></a>
         </div>
-      </footer>
-    </div>
+        <div class="icon-net">
+          <a href="https://github.com/OrlandoTele96"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

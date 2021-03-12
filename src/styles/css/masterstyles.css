@@ -27,14 +27,10 @@ body {
   font-size: 15px;
   margin: auto;
   padding: auto;
-}
-body .body-container {
   width: 100%;
-  margin: 0 auto;
-  padding: 0;
 }
 
-.body-container header {
+header {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -44,16 +40,16 @@ body .body-container {
   align-items: center;
   align-content: center;
 }
-.body-container header .jorlandoblog {
+header .jorlandbrand {
   width: auto;
 }
-.body-container header nav {
+header .menu {
   width: 100%;
   display: flex;
   align-items: center;
   background: #000000;
 }
-.body-container header nav ul {
+header .menu ul {
   width: 100%;
   margin: 0.2% auto;
   padding: 0.5%;
@@ -62,184 +58,194 @@ body .body-container {
   align-items: center;
   justify-content: center;
 }
-.body-container header nav ul li {
+header .menu ul li {
+  width: 100px;
   margin: 15px;
   padding: 5px;
   border: 1px solid #ffffff;
 }
-.body-container header nav ul li a {
+header .menu ul li a {
+  margin: 2px;
   font-size: 20px;
   color: #ffffff;
 }
-.body-container header nav ul li a:hover {
+header .menu ul li a:hover {
   color: #6e6e6e;
   text-decoration: underline;
   transition: all 0.5s ease;
 }
-.body-container header nav ul li:hover {
+header .menu ul li:hover {
   border: 1px solid rgba(110, 110, 110, 0.5);
   transition: all 0.5s ease;
 }
 
-.Posts {
-  width: 80%;
+.main {
+  background: #ffffff;
+  width: 60%;
   margin: auto;
-  padding: 5px;
+  padding: auto;
 }
-.Posts .post {
-  width: 100%;
-  margin: 0.5% 0%;
-  margin-bottom: 2%;
-  padding: 2%;
+.main .container {
   background: #E5E3E3;
+  margin: 20px;
+  display: block;
 }
-.Posts .post .post-container {
-  width: 100%;
-  margin: 1%;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.Posts .post .post-container h2 {
+.main .container h2 {
   text-align: center;
   font-size: 35px;
   font-style: italic;
   font-weight: bolder;
+  margin: 2px;
 }
-.Posts .post .post-container h3 {
+.main .container h3 {
   font-style: italic;
   text-align: center;
+  margin: 2px;
 }
-.Posts .post .post-container .posted {
-  width: 95%;
-  margin: auto;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.Posts .post .post-container .posted h3 {
-  font-size: 20px;
-  font-style: italic;
-  text-align: center;
-}
-.Posts .post .post-container .posted h4 {
-  font-size: 18px;
-  font-style: italic;
-  text-align: center;
-}
-.Posts .post .post-container .posted .posted-img {
+.main .container .img-article {
   width: auto;
   margin: 1%;
   padding: 1%;
-  display: flex;
-  justify-content: center;
-}
-.Posts .post .post-container .posted .posted-img img {
-  width: 400px;
-}
-.Posts .post .post-container .proyect-gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.Posts .post .post-container .proyect-gallery .proyect-rv-container {
-  width: 20%;
-  margin: 1%;
-  padding: 1%;
-  border: 3px solid #000000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main .container .img-article img {
+  width: 400px;
 }
-.Posts .post .post-container .proyect-gallery .proyect-rv-container .proyect-rv-img a {
-  margin: auto;
-}
-.Posts .post .post-container .proyect-gallery .proyect-rv-container .proyect-rv-img a img {
-  width: 200px;
-  height: 150px;
-  margin: 1%;
-  padding: 1%;
-  opacity: 1;
-}
-.Posts .post .post-container .proyect-gallery .proyect-rv-container .proyect-rv-img a img:hover {
-  opacity: 0.5;
-}
-.Posts .post .post-container .proyect-gallery .proyect-rv-container:hover {
-  border-color: rgba(0, 0, 0, 0.5);
-}
-.Posts .post .post-container .img-article {
-  width: auto;
-  margin: 2% auto;
-  padding: 1%;
-}
-.Posts .post .post-container .proyect {
+.main .container article {
   width: 90%;
   margin: 20px;
   padding: 10px;
-  border: 2px solid #000000;
-  display: flex;
-  align-items: flex-start;
 }
-.Posts .post .post-container .proyect:hover {
-  border-color: #6e6e6e;
-  transition: all 0.3s ease;
-}
-.Posts .post .post-container .proyect .proyect-img {
-  width: 20%;
-  margin: 1px;
-  padding: 1px;
-}
-.Posts .post .post-container .proyect .proyect-img a {
+.main .container .proyect-gallery {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .container .proyect-gallery .gallery-proyects {
+  width: 250px;
+  margin: 10px 5px;
+  padding: 10px;
+  border: 2px solid #000000;
+  display: block;
+}
+.main .container .proyect-gallery .gallery-proyects .proyect-gal-img {
+  width: auto;
+  margin: auto;
+}
+.main .container .proyect-gallery .gallery-proyects .proyect-gal-img img {
+  width: 200px;
+  height: 150px;
+  margin: 2px 10px;
+  padding: 1px;
   opacity: 1;
 }
-.Posts .post .post-container .proyect .proyect-img a img {
-  width: 200px;
-}
-.Posts .post .post-container .proyect .proyect-img:hover {
+.main .container .proyect-gallery .gallery-proyects .proyect-gal-img img:hover {
   opacity: 0.5;
 }
-.Posts .post .post-container .proyect-art {
-  width: 98%;
-  margin: 5px;
-  padding: 0;
+.main .container .proyect-gallery .gallery-proyects:hover {
+  border-color: rgba(0, 0, 0, 0.5);
 }
-.Posts .post .post-container .proyect-art .proyect-description p a {
-  color: #000000;
-  text-decoration: underline;
+.main .container .post-recent {
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  display: block;
 }
-.Posts .post .post-container .proyect-art .proyect-description p a:visited {
-  color: blue;
+.main .container .post-recent .post-recent-content {
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #000000;
 }
-.Posts .post .post-container .proyect-art .img-proyect-art {
+.main .container .post-recent .post-recent-content:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.main .container .proyect-list {
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+}
+.main .container .proyect-list .proyect-item {
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main .container .proyect-list .proyect-item .proyect-item-img {
+  width: auto;
+  margin: 10px 5px;
+}
+.main .container .proyect-list .proyect-item .proyect-item-img img {
+  width: 200px;
+  opacity: 1;
+}
+.main .container .proyect-list .proyect-item .proyect-item-img img:hover {
+  opacity: 0.5;
+}
+.main .container .proyect-list .proyect-item h3 {
+  font-style: italic;
+  text-align: center;
+}
+.main .container .proyect-list .proyect-item .proyect-item-desc {
+  margin: 10px;
+}
+.main .container .proyect-list .proyect-item:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.main .container .proyect-article {
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+}
+.main .container .proyect-article .img-proyect-article {
   width: auto;
   margin: 1%;
   padding: 1%;
   display: flex;
   align-items: center;
 }
-.Posts .post .post-container .proyect-art .img-proyect-art img {
+.main .container .proyect-article .img-proyect-article img {
   width: 90%;
   margin: auto;
   padding: 0;
 }
-.Posts .post .post-container .post-recent {
-  width: 95%;
-  margin: auto;
-  padding: 1%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+.main .container .proyect-article .desc-proyect-article {
+  margin: 5px;
+  padding: 10px;
 }
-.Posts .post .post-container .post-recent .post-recent-content {
-  width: 48%;
-  margin: 1%;
-  padding: 1%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+.main .container .proyect-article .desc-proyect-article p a {
+  color: #000000;
+  text-decoration: underline;
+}
+.main .container .Post {
+  width: 90%;
+  margin: 10px auto;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.main .container .Post .img-Post {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.main .container .Post .img-Post img {
+  width: 400px;
+  margin: 10px auto;
+}
+.main .container .Post .content-Post {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.main .container .Post .content-Post .date-content-Post {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -276,105 +282,119 @@ footer .networks .icon-net a {
   margin: 60px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   body {
-    font-size: 10px;
+    font-size: 15px;
   }
-  body .body-container header {
+  body header {
     width: 100%;
   }
-  body .body-container header .jorlandoblog {
-    width: 60%;
+  body header .jorlandbrand {
+    width: 80%;
     margin: auto;
   }
-  body .body-container header .jorlandoblog img {
+  body header .jorlandbrand img {
     width: 80%;
-    margin: 10px;
+    margin: 1% 10%;
   }
-  body .body-container header nav {
+  body header .menu {
     width: 100%;
   }
-  body .body-container header nav ul {
+  body header .menu ul {
     width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
   }
-  body .body-container header nav ul li {
-    width: auto;
+  body header .menu ul li {
+    width: 100px;
     margin: 10px;
   }
-  body .body-container header nav ul li a {
-    font-size: 12px;
+  body header .menu ul li a {
+    font-size: 20px;
   }
-  body .body-container .Posts {
-    width: 90%;
-    margin: auto;
-    padding: 1px;
-  }
-  body .body-container .Posts .post {
+  body .main {
     width: 95%;
-    margin: 1px 1px 1px 1px;
   }
-  body .body-container .Posts .post .post-container {
-    width: 100%;
-    margin: 1%;
-    padding: 1%;
+  body .main .container {
+    margin: 10px;
   }
-  body .body-container .Posts .post .post-container .proyect-gallery {
-    margin: 1px;
-    flex-direction: column;
-    justify-content: center;
+  body .main .container h2 {
+    font-size: 30px;
   }
-  body .body-container .Posts .post .post-container .proyect-gallery .proyect-rv-container {
-    width: auto;
-    justify-content: center;
+  body .main .container h3 {
+    font-size: 20px;
   }
-  body .body-container .Posts .post .post-container .posted h3 {
-    font-size: 18px;
+  body .main .container .img-article {
+    width: 80%;
+    margin: 25px auto;
   }
-  body .body-container .Posts .post .post-container .posted h4 {
-    font-size: 12px;
-  }
-  body .body-container .Posts .post .post-container .posted .posted-img img {
+  body .main .container .img-article img {
     width: 200px;
   }
-  body .body-container .Posts .post .post-container .img-article {
-    width: auto;
-    margin: 1%;
-  }
-  body .body-container .Posts .post .post-container .img-article img {
+  body .main .container .proyect-gallery {
     width: 80%;
-    margin: 0 10%;
-  }
-  body .body-container .Posts .post .post-container .proyect {
+    margin: 10px auto;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
-  body .body-container .Posts .post .post-container .proyect .proyect-img {
+  body .main .container .proyect-gallery .gallery-proyects {
+    margin: 10px auto;
+  }
+  body .main .container .post-recent {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  body .main .container .post-recent .post-recent-content {
+    margin: 10px auto;
+  }
+  body .main .container .proyect-list .proyect-item {
+    flex-direction: column;
+  }
+  body .main .container .proyect-article {
+    padding: 10px;
+  }
+  body .main .container .proyect-article .img-proyect-article {
+    width: 90%;
+    margin: 20px auto;
+  }
+  body .main .container .proyect-article .img-proyect-article img {
+    width: 200px;
+    height: 150px;
+  }
+  body .main .container .Post {
+    padding: 5px;
+  }
+  body .main .container .Post .img-Post {
     width: 80%;
   }
-  body .body-container footer {
+  body .main .container .Post .img-Post img {
+    width: 150px;
+    height: 100px;
+  }
+  body footer {
     width: 100%;
   }
-  body .body-container footer .rights {
+  body footer .rights {
     width: 100%;
   }
-  body .body-container footer .rights p {
+  body footer .rights p {
     font-size: 8px;
     margin: 0 10%;
   }
-  body .body-container footer .networks {
+  body footer .networks {
     width: 100%;
     display: flex;
     flex-direction: column;
     order: 1;
   }
-  body .body-container footer .networks .icon-net {
+  body footer .networks .icon-net {
     width: 15%;
     font-size: 20px;
   }
-  body .body-container footer .networks .icon-net a {
+  body footer .networks .icon-net a {
     margin: 10px;
   }
 }

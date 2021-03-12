@@ -1,0 +1,140 @@
+$FirstColor : #000000
+$SecondColor : #ffffff
+$Transitioncol: #6e6e6e
+$PostColor : #E5E3E3
+
+.main
+  background: $SecondColor
+  width: 60%
+  margin: auto
+  padding: auto
+  .container
+    background: $PostColor
+    margin: 20px
+    display: block
+    h2
+      text-align: center
+      font-size: 35px
+      font-style: italic
+      font-weight: bolder
+      margin: 2px
+    h3
+      font-style: italic
+      text-align: center
+      margin: 2px
+    .img-article
+      width: auto
+      margin: 1%
+      padding: 1%
+      display: flex
+      flex-direction: row
+      justify-content: center
+      img
+        width: 400px
+    article
+      width: 90%
+      margin: 20px
+      padding: 10px
+    .proyect-gallery
+      width: 100%
+      display: flex
+      flex-direction: row
+      justify-content: center
+      .gallery-proyects
+        width: 250px
+        margin : 10px 5px
+        padding: 10px
+        border: 2px solid $FirstColor
+        display: block
+        .proyect-gal-img
+          width: auto
+          margin: auto
+          img
+            width: 200px
+            height: 150px
+            margin: 2px 10px
+            padding: 1px
+            opacity: 1
+            &:hover
+              opacity: 0.5
+        &:hover
+          border-color: rgba($FirstColor,0.5)
+    .post-recent
+      width: 90%
+      margin: 10px
+      padding: 10px
+      display: block
+      .post-recent-content
+        width: 90%
+        margin: 20px auto
+        padding: 15px
+        border: 1px solid $FirstColor
+        &:hover
+          border-color: rgba($FirstColor,0.5)
+    .proyect-list
+      width: 90%
+      margin: 10px
+      padding: 10px
+      display: block
+      .proyect-item
+        margin: 10px auto
+        border: 2px solid rgba($FirstColor,1)
+        display: flex
+        flex-direction: row
+        align-items: center
+        .proyect-item-img
+          width: auto
+          margin: 10px 5px
+          img
+            width: 200px
+            opacity: 1
+            &:hover
+              opacity: 0.5
+        h3
+          font-style: italic
+          text-align: center
+        .proyect-item-desc
+          margin: 10px
+        &:hover
+          border-color: rgba($FirstColor,0.5)
+    .proyect-article
+      width: 90%
+      margin: 10px
+      padding: 10px
+      .img-proyect-article
+        width: auto
+        margin: 1%
+        padding: 1%
+        display: flex
+        align-items: center
+        img
+          width: 90%
+          margin: auto
+          padding: 0
+      .desc-proyect-article
+        margin: 5px
+        padding: 10px
+        p
+          a
+            color: $FirstColor
+            text-decoration: underline
+    .Post
+      width: 90%
+      margin: 10px auto
+      padding: 15px
+      border: 1px solid rgba($FirstColor,0.5)
+      .img-Post
+        width: 90%
+        margin: 10px auto
+        padding: 10px
+        display: flex
+        justify-content: center
+        img
+          width: 400px
+          margin: 10px auto
+      .content-Post
+        margin: 20px
+        padding: 10px
+        text-align: center
+        .date-content-Post
+          color: rgba($FirstColor,0.5)

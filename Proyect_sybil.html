@@ -12,82 +12,78 @@
     <title>Ing. Jorge Orlando's blog</title>
   </head>
   <body>
-    <div class="body-container">
-      <header>
-        <div class="jorlandoblog">
-          <img src="img/head-text.png" alt="">
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Proyects.html">Proyects</a></li>
-            <li><a href="Posts.html">Posts</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="Posts">
-        <article class="post">
-          <div class="post-container">
-            <h2>Proyecto de investigación</h2>
-            <div class="proyect-art">
-              <div class="img-proyect-art">
-                <img src="img/dispositivos.jpeg" alt="Tarjetas LoRa">
-              </div>
-              <div class="proyect-description">
-                <p>En este proyecto se pretende crear un esquema de detección
-                  para ataques sybil en redes IoT.  Las redes IoT han ido en
-                  aumento a lo largo de los últimos años, por lo que se puede
-                  prever que los ataques este tipo de redes también vaya en aumento .
-                  Uno de ellos es el  ataque sybil, en el que se pretende que
-                  algún nodo malicioso suplante identidades ficticias o robadas
-                  a lo largo de la red.  Este ataque puede ser  muy perjudicial
-                  porque se puede tomar el control del tráfico de la red redirigiendo
-                  paquetes de información a conveniencia y así realizar otro
-                  tipo de ataques  que  vulneren la seguridad de la red.
-                  Por esta razón el esquema realizado puede tener impacto en
-                  los futuros desarrollos de protocolos para dispositivos IoT.</p>
-                <p>El mecanismo desarrollado propone 3 fases; detección de
-                  posición mediante parámetro físico (RSSI), detección de 
-                  identidades sybil mediante PoW y consenso.</p>
-                <p>La fase 1 nos proporciona un primer acercamiento a
-                  las identidades sybil, generando una lista de sospechosos en
-                  base a su posición. En la fase 2 se pone a prueba
-                  las identidades que resultaron sospechosas mediante el
-                  concepto de  prueba de trabajo (proof of work), en la que se
-                  les genera un desafío matemático lo suficientemente costoso
-                  para que un malicioso no logre resolver más de una prueba a
-                  la vez, teniendo así que dejar sin solución las pruebas para
-                  identidades falsas. La fase 3 trata de generar un consenso
-                  con el resto de los nodos honestos que participaron  y no
-                  fueron considerados como sybil.</p>
-                <p>La implementación de este mecanismo ha sido realizada
-                  haciendo uso de LoRa stick Lite ya que permite realizar
-                  comunicaciones  en bandas de frecuencia no licenciada y
-                  tienen especificaciones técnicas muy limitadas como se
-                  podría tener en un dispositivo de IoT.  </p>
-                <p>repositorio github : <a href="https://github.com/OrlandoTele96/PI_SybilAttack_defense">
-                https://github.com/OrlandoTele96/PI_SybilAttack_defense</a></p>
-              </div>
-            </div>
+    <header>
+      <div class="jorlandbrand">
+        <img src="img/head-text.png" alt="">
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Proyects.html">Proyects</a></li>
+          <li><a href="Posts.html">Posts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <section class="container">
+        <article class="proyect-article">
+          <div class="img-proyect-article">
+            <img src="img/dispositivos.jpeg" alt="Tarjetas LoRa">
+          </div>
+          <h2>Proyecto de investigación</h2>
+          <div class="desc-proyect-article">
+            <p>En este proyecto se pretende crear un esquema de detección
+              para ataques sybil en redes IoT.  Las redes IoT han ido en
+              aumento a lo largo de los últimos años, por lo que se puede
+              prever que los ataques este tipo de redes también vaya en aumento .
+              Uno de ellos es el  ataque sybil, en el que se pretende que
+              algún nodo malicioso suplante identidades ficticias o robadas
+              a lo largo de la red.  Este ataque puede ser  muy perjudicial
+              porque se puede tomar el control del tráfico de la red redirigiendo
+              paquetes de información a conveniencia y así realizar otro
+              tipo de ataques  que  vulneren la seguridad de la red.
+              Por esta razón el esquema realizado puede tener impacto en
+              los futuros desarrollos de protocolos para dispositivos IoT.</p>
+            <p>El mecanismo desarrollado propone 3 fases; detección de
+              posición mediante parámetro físico (RSSI), detección de
+              identidades sybil mediante PoW y consenso.</p>
+            <p>La fase 1 nos proporciona un primer acercamiento a
+              las identidades sybil, generando una lista de sospechosos en
+              base a su posición. En la fase 2 se pone a prueba
+              las identidades que resultaron sospechosas mediante el
+              concepto de  prueba de trabajo (proof of work), en la que se
+              les genera un desafío matemático lo suficientemente costoso
+              para que un malicioso no logre resolver más de una prueba a
+              la vez, teniendo así que dejar sin solución las pruebas para
+              identidades falsas. La fase 3 trata de generar un consenso
+              con el resto de los nodos honestos que participaron  y no
+              fueron considerados como sybil.</p>
+            <p>La implementación de este mecanismo ha sido realizada
+              haciendo uso de LoRa stick Lite ya que permite realizar
+              comunicaciones  en bandas de frecuencia no licenciada y
+              tienen especificaciones técnicas muy limitadas como se
+              podría tener en un dispositivo de IoT.  </p>
+            <p>repositorio github : <a href="https://github.com/OrlandoTele96/PI_SybilAttack_defense">
+            https://github.com/OrlandoTele96/PI_SybilAttack_defense</a></p>
           </div>
         </article>
       </section>
-      <footer>
-        <div class="rights">
-          <p>  Designed and developed by Jorge Orlando Gonzalez</p>
+    </section>
+    <footer>
+      <div class="rights">
+        <p>  Designed and developed by Jorge Orlando Gonzalez</p>
+      </div>
+      <div class="networks">
+        <div class="icon-net">
+          <a href="https://www.linkedin.com/in/jorge-orlando-gonz%C3%A1lez-guzm%C3%A1n-566180b5/"><i class="fa fa-linkedin"></i></a>
         </div>
-        <div class="networks">
-          <div class="icon-net">
-            <a href="https://www.linkedin.com/in/jorge-orlando-gonz%C3%A1lez-guzm%C3%A1n-566180b5/"><i class="fa fa-linkedin"></i></a>
-          </div>
-          <div class="icon-net">
-            <a href="https://twitter.com/JorgeOrlandoGo9"><i class="fa fa-twitter"></i></a>
-          </div>
-          <div class="icon-net">
-            <a href="https://github.com/OrlandoTele96"><i class="fa fa-github"></i></a>
-          </div>
+        <div class="icon-net">
+          <a href="https://twitter.com/JorgeOrlandoGo9"><i class="fa fa-twitter"></i></a>
         </div>
-      </footer>
-    </div>
+        <div class="icon-net">
+          <a href="https://github.com/OrlandoTele96"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

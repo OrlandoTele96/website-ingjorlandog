@@ -155,13 +155,16 @@ header .menu ul li:hover {
   display: block;
 }
 .main .container .post-recent .post-recent-content {
-  width: 90%;
+  width: 50%;
   margin: 20px auto;
-  padding: 15px;
+  padding: 15px auto;
   border: 1px solid #000000;
 }
 .main .container .post-recent .post-recent-content:hover {
   border-color: rgba(0, 0, 0, 0.5);
+}
+.main .container .post-recent .post-recent-content p {
+  margin: 10px 15px;
 }
 .main .container .proyect-list {
   width: 90%;
